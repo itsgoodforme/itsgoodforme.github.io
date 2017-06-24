@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> · · · 正在完善中 · · · </title>
+        <link rel="stylesheet" href="style/normalize.css">
+        <link rel="stylesheet" href="style/main.css">
+    </head>
+    <body>
+        <div class="main_wrapper">
+            <header id="header"><!--页头开始-->
+                <nav id="nav">
+                    <div class="logo"><a href="javascript:;" target="_blank"><i>Z Z Z</i></a> </div>
+                    <ul>
+                        <li><a class="active" href="https://www.baidu.com/" target="_blank">Baidu</a> </li>
+                        <li><a href="https://www.github.com/" target="_blank">GitHub</a> </li>
+                        <li><a href="https://www.w3.org/" target="_blank">W3C</a> </li>
+                        <li><a href="http://jquery.com/" target="_blank">JQuery</a> </li>
+                        <li><a href="http://www.bilibili.com/" target="_blank">BiliBili</a> </li>
+                        <li><a href="https://mail.qq.com/" target="_blank">QQmail</a> </li>
+                        <li><a href="http://www.iconfont.cn/" target="_blank">Iconfont</a> </li>
+                    </ul>
+                </nav>
+                <div id="banner">
+                    <div class="inner">
+                        <div class="hr"></div>
+                        <h1>Hello World</h1>
+                        <div class="hr"></div>
+                        <p class="self_txt">When alive ,we may probably offend some people.However, we must think about whether they are deserved offended.</p>
+                        <button id="button">CLICK</button>
+                        <div class="music">
+                            <img src="images/weix.png">
+                        </div>
+                        <div class="more">
+                            <a href="javascript:;" target="_blank">More</a>
+                        </div>
+                    </div>
+                </div>
+            </header><!--页头结束-->
+            <div id="content"><!--内容开始-->
+                <section class="first_section">
+                    <div class="article_pre">
+                        <div class="img_section">
+                            <img src="images/bg.jpg" alt="bg">
+                        </div>
+                        <div class="text_section">
+                            <h2>,whereas you don't</h2>
+                            <p>When alive ,we may probably offend some people.However, we must think about whether they are deserved offended.</p>
+                        </div>
+                    </div>
+
+                    <div class="article_pre">
+                        <div class="text_section">
+                            <h2>to feel the flame of dreaming</h2>
+                            <p>When alive ,we may probably offend some people.However, we must think about whether they are deserved offended.</p>
+                        </div>
+                        <div class="img_section">
+                            <img src="images/bg.jpg" alt="bg">
+                        </div>
+                    </div>
+
+                    <div class="article_pre">
+                        <div class="img_section">
+                            <img src="images/bg.jpg" alt="bg">
+                        </div>
+                        <div class="text_section">
+                            <h2>Maybe God wants us to meet</h2>
+                            <p>When alive ,we may probably offend some people.However, we must think about whether they are deserved offended.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="sec_section">
+                    <div class="wrapper">
+                        <div class="heading_wrapper">
+                            <h2>Maybe God wants us to meet</h2>
+                            <div class="sub_title">When alive ,we may probably offend some people.However, we must think about whether they are deserved offended.</div>
+                        </div>
+                        <div class="card_group clearfixed">
+                            <div class="card">
+                                <h3>Maybe God wants us to meet</h3>
+                                <p>When alive ,we may probably offend some people.However, we must think about whether they are deserved offended.</p>
+                            </div>
+                            <div class="card">
+                                <h3>Maybe God wants us to meet</h3>
+                                <p>When alive ,we may probably offend some people.However, we must think about whether they are deserved offended.</p>
+                            </div>
+                            <div class="card">
+                                <h3>Maybe God wants us to meet</h3>
+                                <p>When alive ,we may probably offend some people.However, we must think about whether they are deserved offended.</p>
+                            </div>
+                            <div class="card">
+                                <h3>Maybe God wants us to meet</h3>
+                                <p>When alive ,we may probably offend some people.However, we must think about whether they are deserved offended.</p>
+                            </div>
+                            <div class="card">
+                                <h3>Maybe God wants us to meet</h3>
+                                <p>When alive ,we may probably offend some people.However, we must think about whether they are deserved offended.</p>
+                            </div>
+                            <div class="card">
+                                <h3>Maybe God wants us to meet</h3>
+                                <p>When alive ,we may probably offend some people.However, we must think about whether they are deserved offended.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div><!--内容结束-->
+            <footer id="footer"><!--页脚开始-->
+                <ul class="logo_group">
+                    <li>I</li>
+                    <li>would</li>
+                    <li>like</li>
+                    <li>weeping</li>
+                    <li>with.......</li>
+                </ul>
+                <div class="copy">
+                    &copy HelloWorld 2017;
+                </div>
+            </footer><!--页脚结束-->
+        </div>
+        <audio src="mp3/ms.mp3" id="play"></audio>
+        <button class="to_top">TOP</button>
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                var mark = 0;
+                $("#button").click(function(){
+                    alert("I’ll think of you every step of the way.");
+                });
+
+                $(".music").click(function(){
+                    if(mark == 0)
+                    {
+                        $("#play").get(0).play();
+                        mark = 1;
+                    } else
+                    {
+                        $("#play").get(0).pause();
+                        mark = 0;
+                    }
+                })
+                backbutton = $(".to_top"),
+                backbutton.on("click",function()
+                {
+                    $("html,body").animate({
+                        scrollTop:0
+                    },800)
+                })
+                $(window).on("scroll",function () {
+                    if($(window).scrollTop() > $(window).height())
+                        backbutton.fadeIn();
+                    else
+                        backbutton.fadeOut();
+                })
+                $(window).trigger("scroll");
+            })
+        </script>
+    </body>
+</html>
